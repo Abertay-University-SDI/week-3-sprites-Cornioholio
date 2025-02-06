@@ -4,6 +4,8 @@
 #include "Framework/BaseLevel.h"
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "Player.h"
+#include "Enemy.h"
 #include <string.h>
 #include <iostream>
 
@@ -19,7 +21,11 @@ public:
 
 private:
 	// Level objects
+	Player playerObject;
+	Enemy enemyObject;
+
 	GameObject testSprite;
-	sf::Texture texture;
+	sf::Texture texturePlayer;
+	sf::Texture textureEnemy;
 
 };
